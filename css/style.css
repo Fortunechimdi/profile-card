@@ -19,23 +19,20 @@ body{
 font-family: 'kumbh Sans', sans-serif;
 font-size: 18px;
 background: hsl(185, 75%, 39%) ;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-min-height: calc(100vh-0.1px);
+
+
+
 overflow: hidden; /* to remove scroll bars*/
 }
 
-section{    
+.card{    
     margin-top: 100px;
-margin-left: 100%;
-margin-right: 100%;
-display: block;
+margin-left: auto;
+margin-right: auto;
+                     
 background: white;
 width: 360px;
-border-radius: 15px;
+border-radius: 15px;text-align: center;
 /* box-shadow: 2px 2px 7px rgb(78, 76, 76);*/
 }
 
@@ -77,23 +74,8 @@ h2{ font-size: 20px;}
 #london {margin-top:26px;}
 
 
-#bg-top{ 
-    position: absolute;
-    left: -30%;
-    top: -70%;
-    z-index: -1;
-    animation:2s forwards;
-}
-#bg-bottom{
-    position: absolute;
-    right: -20%;
-    bottom: -95%;
-    z-index: -1;
-    animation:2s forwards;
-}
 
-@media (width:375px),(orientation:portrait) {
-    #bg-top{ 
+#bg-top{ 
         position: absolute;
         left: -150%;
         top: -110%;
@@ -105,4 +87,17 @@ h2{ font-size: 20px;}
         bottom: -110%;
         z-index: -1;
     }
+@media (width:1000px),(orientation:landscape) {
+    #bg-top{ 
+    position: absolute;
+    left: -30%;
+    top: -70%;
+    z-index: -1;
+}
+#bg-bottom{
+    position: absolute;
+    right: -20%;
+    bottom: -95%;
+    z-index: -1;
+}
 }
