@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center;color: azure;}
+.attribution a { color: hsl(228, 71%, 37%); }
+#image {
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    position: absolute;
+    left:37%;
+    bottom: -33%;
+
+}
+.image {
+    position: relative;
+}
+body{
+font-family: 'kumbh Sans', sans-serif;
+font-size: 18px;
+background: hsl(185, 75%, 39%) ;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: calc(100vh-0.1px);
+overflow: hidden; /* to remove scroll bars*/
+}
+
+section{    
+    margin-top: 100px;
+margin-left: 100%;
+margin-right: 100%;
+display: block;
+background: white;
+width: 360px;
+border-radius: 15px;
+/* box-shadow: 2px 2px 7px rgb(78, 76, 76);*/
+}
+
+#card-image{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.items {
+    display: inline-block;
+    line-height: 7px;
+    margin: 22px;
+    margin-top: 25px;
+    margin-bottom: 35px;  
+}
+
+.details {
+    margin-top: 90px;
+      border-bottom: 0.002rem solid hsl(226, 40%, 84%) ;
+      line-height: 2rem;
+      padding-bottom: 20px;
+      padding-bottom: 35px;
+      line-height: 10px;
+}
+h1,h2{
+    color:hsl(229, 23%, 23%) ;
+}
+.thin,span{
+    color:hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+span {
+    font-size: 13px;
+    letter-spacing: 0.08rem;
+}
+h1 {font-weight: 700; font-size: 22px;}
+h2{ font-size: 20px;}
+#age{font-size: 25px ; font-size: 22px;}
+#london {margin-top:26px;}
+
+
+#bg-top{ 
+    position: absolute;
+    left: -30%;
+    top: -70%;
+    z-index: -1;
+    animation:2s forwards;
+}
+#bg-bottom{
+    position: absolute;
+    right: -20%;
+    bottom: -95%;
+    z-index: -1;
+    animation:2s forwards;
+}
+
+@media (width:375px),(orientation:portrait) {
+    #bg-top{ 
+        position: absolute;
+        left: -150%;
+        top: -110%;
+        z-index: -1;
+    }
+    #bg-bottom{
+        position: absolute;
+        right: -150%;
+        bottom: -110%;
+        z-index: -1;
+    }
+}
