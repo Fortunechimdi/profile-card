@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 
-.attribution { font-size: 11px; text-align: center;color: azure;}
+.attribution { font-size: 11px; text-align: center;color: azure;display: block;}
 .attribution a { color: hsl(228, 71%, 37%); }
 #image {
+    
     border-radius: 50%;
     border: 5px solid rgb(255, 255, 255);
     position: absolute;
@@ -16,46 +17,46 @@
     position: relative;
 }
 body{
-font-family: 'kumbh Sans', sans-serif;
+    font-family:'kumbh Sans' sans-serif;
 font-size: 18px;
 background: hsl(185, 75%, 39%) ;
-
-
-
 overflow: hidden; /* to remove scroll bars*/
+width: 375;
 }
 
 .card{    
     margin-top: 100px;
 margin-left: auto;
 margin-right: auto;
-                     
+              
 background: white;
 width: 360px;
 border-radius: 15px;text-align: center;
 /* box-shadow: 2px 2px 7px rgb(78, 76, 76);*/
+
 }
 
 #card-image{
     width: 100%;
     border-radius: 15px 15px 0 0 ;
 }
-
-.items {
-    display: inline-block;
-    line-height: 7px;
-    margin: 22px;
-    margin-top: 25px;
-    margin-bottom: 35px;  
-}
-
 .details {
-    margin-top: 90px;
       border-bottom: 0.002rem solid hsl(226, 40%, 84%) ;
-      line-height: 2rem;
-      padding-bottom: 20px;
-      padding-bottom: 35px;
+      margin-top: 70px;
       line-height: 10px;
+      
+}
+#london {margin-bottom: 57px;}
+.content {
+    text-align: center; padding: 0px;
+    font-family: "kumbh sans" sans-serif;
+}
+.items {display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin: 20px; line-height: 5px;
+        margin-top: 14px;margin-bottom: 35px;
+        
 }
 h1,h2{
     color:hsl(229, 23%, 23%) ;
@@ -71,20 +72,20 @@ span {
 h1 {font-weight: 700; font-size: 22px;}
 h2{ font-size: 20px;}
 #age{font-size: 25px ; font-size: 22px;}
-#london {margin-top:26px;}
+#london {margin-top:20px;}
 
 
 
 #bg-top{ 
         position: absolute;
-        left: -150%;
-        top: -110%;
+        left: -160%;
+        top: -115%;
         z-index: -1;
     }
     #bg-bottom{
         position: absolute;
-        right: -150%;
-        bottom: -110%;
+        right: -160%;
+        bottom: -115%;
         z-index: -1;
     }
 @media (width:1000px),(orientation:landscape) {
@@ -99,5 +100,10 @@ h2{ font-size: 20px;}
     right: -20%;
     bottom: -95%;
     z-index: -1;
+}
+body {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
